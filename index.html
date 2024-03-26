@@ -37,7 +37,7 @@
                    
                 </div>  
                 <div class="flex justify-center text-9xl text-black items-center min-h-full">
-                    <p id="current_alphabet" class="up">Y</p>
+                    <p id="current_alphabet" class="uppercase">Y</p>
                    </div>  
                 </div>
 
@@ -80,17 +80,19 @@
                 <!-- keyboard end -->
                 <!-- live Score -->
                 <div class="flex justify-between w-3/4">
-                    <button class="btn rounded-full bg-purple-800 text-white">
+                    <!-- display life -->
+                    <button class="btn rounded-full bg-pink-400 text-white">
                         Life
-                        <i class="fa-solid fa-heart-circle-bolt"></i>
-                        <span>1</span>
+                       <img src="images/heart1.png" alt="">
+                        <span id="current_life">5</span>
                       </button>
+                      <!-- disply score -->
                       <button class="btn rounded-full bg-purple-800 text-white">
                         Score
                         <span class="material-symbols-outlined">
                             paid
                             </span>
-                            <span>1</span>
+                            <span id="current_score">0</span>
                       </button>
                 </div>
                 
@@ -98,13 +100,14 @@
         </section>
         <!-- playground end -->
         <!-- final score start -->
-        <section class="score min-h-screen flex justify-center items-center  flex-col  text-center hidden" >
+        <section id="last_score" class=" min-h-screen flex justify-center items-center  flex-col  text-center hidden" >
             <div class=" bg-[#ffffff33]  p-6 space-y-3 rounded-lg">
+                <h3 class="text-white">Game Over!</h3>
                 <h1 class="text-5xl text-white">
                     <span class=" font-extrabold ">Score:</span>
-                <span>14</span>
+                <span id="game_score">14</span>
                 </h1>
-                <button class="bg-white w-28 h-12 rounded-md text-black font-semibold">Play Again</button>                <p class="text-white">Practice will make you Pro</p>
+                <button id="restar_game" class="bg-white w-28 h-12 rounded-md text-black font-semibold">Play Again</button>                <p class="text-white">Practice will make you Pro</p>
             </div>
         </section>
     </main>

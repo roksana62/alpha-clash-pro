@@ -17,6 +17,19 @@ let element= document.getElementById(elementId)
 element.classList.remove('bg-orange-400')
 }
 
+
+function getElementValuById (elementId){
+    let currentElementValue= document.getElementById(elementId)
+    let currentValue= currentElementValue.innerText;
+    let parseValue= parseInt(currentValue);
+    return parseValue;
+}
+
+function setElementValueById (elementId, value){
+    let currentElementValue= document.getElementById(elementId)
+    currentElementValue.innerText= value;
+}
+
 function getARandomAlphabet (){
     // get or crate alphabetarray
     let alphabetString= 'abcdefghijklmnopqrstuvwxyz';
